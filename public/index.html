@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"/>
+    <title>Drew</title>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+    <nav role ="navigation" 
+    class="flex justify-between items-center h-16 bg-gray-100 text-gray-800">
+       <a href="index.html" class="pl-6">
+       </a>
+       <div class="px-4 cursor-pointer md:hidden" id="bars">
+        <svg class="w-8 h-8" 
+        fill="none" 
+        stroke="currentColor" 
+        viewBox="0 0 24 24" 
+        xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round" 
+        stroke-linejoin="round" 
+        stroke-width="2" 
+        d="M4 6h16M4 12h16M4 18h16"
+        ></path>
+    </svg>
+       </div> 
+        <div class="hidden md:block z-20" id="menu">
+            <a href="index.html" class="font-bold animate-pulse h-1/3 p-4">HOME</a>
+            <a href="about.html" class="h-1/3 p-4">ABOUT</a>
+            <a href="work.html" class="h-1/3 p-4">WORK</a>
+        </div> 
+    </nav>
+<!-- Main Display #1 -->
+  <section class="bg-gray-100 h-screen bg-center bg-cover">
+  <div class="container mx-auto h-screen w-full flex flex-col lg:px-2 px-0 py-18 lg:py-36 2xl:py-64 items-center">
+      <div class="text-center w-full">
+      <h1 class="text-8xl text-center font-body text-gray-800 mb-10 uppercase">Drew</h1>
+      <div class="center w-full mb-10">
+        <div class="animate-wiggle">
+          <a href="about.html"><img class="h-36 md:h-36" src="./images/Head3.png"></img>
+          </a>
+        </div>
+      </div>
+      <h3 class="text-3xl text-center font-body text-gray-800 uppercase">Analytical Business Strategist</h3>
+      <p class="text-sm font-body pb-12 lg:pb-20">(FOR CREATORS)</p>
+        <div class="center lg:py-16 py-0">
+          <svg class="lg:absolute md:bottom-0 bottom-0 w-12 h-12" fill="black" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+          </svg>
+        </div>
+      </div>
+  </div>
+  </section>
+  <!--Skill Set-->
+  <section class="text-gray-800 bg-gray-50">
+    <div class="container mx-auto px-5 py-24">
+      <div class="flex flex-col text-center w-full mb-20">
+        <h1 class="text-4xl uppercase font-body mb-4 text-gray-900 hover:text-yellow-300">SkillSet</h1>
+        <p class="lg:w-2/3 mx-auto leading-relaxed font-extralight">I don't know who you are. I don't know what you want. If you are looking for quick answers, I don't have that, but what I do have are a very particular set of skills</p>
+      </div>
+      <div class="flex flex-wrap -m-2">
+        <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+          <div class="h-full flex items-center hover:bg-yellow-300 border-gray-200 border p-4 rounded-lg">
+            <img alt="team" class="w-16 h-16 object-cover object-center flex-shrink-0 mr-4" src="./images/ML2.png">
+            <div class="flex-grow">
+              <h2 class="text-gray-900 font-body text-2xl">Machine Learning</h2>
+              <p class="text-gray-600 uppercase text-xs">Analytics</p>
+            </div>
+          </div>
+        </div>
+        <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+          <div class="h-full flex items-center hover:bg-yellow-300 border-gray-200 border p-4 rounded-lg">
+            <img alt="team" class="w-16 h-16 object-cover object-center flex-shrink-0 mr-4" src="./images/MktResearch.png">
+            <div class="flex-grow">
+              <h2 class="text-gray-900 font-body text-2xl">Market Research</h2>
+              <p class="text-gray-600 uppercase text-xs">Strategy</p>
+            </div>
+          </div>
+        </div>
+        <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+          <div class="h-full flex items-center hover:bg-yellow-300 border-gray-200 border p-4 rounded-lg">
+            <img alt="team" class="w-16 h-16 object-cover object-center flex-shrink-0  mr-4" src="./images/WebDevLogo.png">
+            <div class="flex-grow">
+              <h2 class="text-gray-900 font-body text-2xl">Web Development</h2>
+              <p class="text-gray-600 uppercase text-xs">UI/UX</p>
+            </div>
+          </div>
+        </div>
+        <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+          <div class="h-full flex items-center hover:bg-yellow-300 border-gray-200 border p-4 rounded-lg">
+            <img alt="team" class="w-16 h-16 object-cover object-center flex-shrink-0 mr-4" src="./images/DataViz.png">
+            <div class="flex-grow">
+              <h2 class="text-gray-900 font-body text-2xl">Data Visualization</h2>
+              <p class="text-gray-600 uppercase text-xs">Analytics</p>
+            </div>
+          </div>
+        </div>
+        <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+          <div class="h-full flex items-center hover:bg-yellow-300 border-gray-200 border p-4 rounded-lg">
+            <img alt="team" class="w-16 h-16 object-cover object-center flex-shrink-0 mr-4" src="./images/Strategy2.png">
+            <div class="flex-grow">
+              <h2 class="text-gray-900 font-body text-2xl">Content Strategy</h2>
+              <p class="text-gray-600 uppercase text-xs">Strategy</p>
+            </div>
+          </div>
+        </div>
+        <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+          <div class="h-full flex items-center hover:bg-yellow-300 border-gray-200 border p-4 rounded-lg">
+            <img alt="team" class="w-16 h-16 object-cover object-center flex-shrink-0 mr-4" src="./images/Reporting.png">
+            <div class="flex-grow">
+              <h2 class="text-gray-900 font-body text-2xl">Creative Reporting</h2>
+              <p class="text-gray-600 uppercase text-xs">Analytics</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--Work Flow-->
+  <section class="text-gray-800 bg-gray-100">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-wrap w-full flex-col mb-20 items-center text-center">
+        <h1 class="md:text-4xl lg:text-4xl text-4xl font-body mb-2 text-gray-700 uppercase hover:text-yellow-300">Workflow</h1>
+        <p class="max-w-2xl text-md text-gray-400 lg:mx-auto">
+       </p>
+    </div>
+      <div class="flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col">
+        <div class="sm:w-28 sm:h-16 h-16 w-28 sm:mr-10 inline-flex items-center justify-center flex-shrink-0">
+          <h2 class="text-yellow-300 text-2xl text-center mx-auto">LEARN</h2>
+        </div>
+        <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
+          <h2 class="text-gray-800 text-2xl font-body mb-2"></h2>
+          <p class="text-gray-900 text-justify font-extralight leading-loose">Understanding objectives and overarching goals 
+            of each project are pivotal. They keep the process focused.
+            Each client's problem is different. My approach synthesizes the subjectivity of the problem and then applies strategical objectivity.</p>
+          <a class="mt-3 text-yellow-300 inline-flex items-center">
+          </a>
+        </div>
+      </div>
+      <div class="flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col">
+        <div class="sm:w-28 sm:h-16 h-16 w-28 sm:mr-10 inline-flex items-center justify-center  flex-shrink-0">
+          <h2 class="text-yellow-300 text-2xl text-center mx-auto">THINK</h2>
+        </div>
+        <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
+          <h2 class="text-gray-800 text-2xl font-body mb-2"></h2>
+          <p class="text-gray-900 text-justify font-extralight leading-loose">Ideating is my strongsuit. My goal with each project is to derive insight or generate value for my clients. 
+            For this to occur, I have to think, operationally, creatively, and comprehensively. 
+            The hypotheses that I generate undergo levels of iterations so that one can fulfill the project goals.</p>
+          <a class="mt-3 text-yellow-300 inline-flex items-center">
+          </a>
+        </div>
+      </div>
+      <div class="flex items-center lg:w-3/5 mx-auto sm:flex-row flex-col">
+        <div class="sm:w-28 sm:h-16 h-16 w-28 sm:mr-10 inline-flex items-center justify-center flex-shrink-0">
+          <h2 class="text-yellow-300 text-2xl text-center mx-auto">CREATE</h2>
+        </div>
+        <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
+          <h2 class="text-gray-800 text-2xl font-body mb-2"></h2>
+          <p class="text-gray-900 text-justify font-extralight leading-loose">To have usability and applicability, a product or service has to be easy to understand, functional, and distinctive. To ensure the project received a balanced mix of each component, I like to remain in close contact with the client so that each element is addressed holistically.</p>
+          <a class="mt-3 text-yellow-300 inline-flex items-center">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--Footer
+  <div class="bg-no-repeat h-5/6 bg-center bg-cover mb-20" style="background-color:white">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="bg-cover bg-center h-auto rounded-lg text-white py-12 px-6 object-fill" style="background-image: url(./images/toa-heftiba-0rlfiRSdVzU-unsplash.jpg)">
+         <div class="md:my-8 lg:my-8 pb-6 mx-auto text-center">
+          <p class="sm:text-6xl md:text-8xl text-6xl uppercase font-body text-yellow-300 hover:text-white mb-10">Are You a Creator? </p>
+          <a href="#" class="py-2 px-4 bg-yellow-300 text-gray-900 font-body text-lg rounded hover:bg-gray-200 hover:text-gray-800">Learn</a>
+          </div>  
+          </div>
+        </div>
+    </div>
+  -->
+    <footer class="text-gray-600 border-t border-gray-200">
+          <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+            <a class="flex title-font font-body items-center md:justify-start justify-center text-gray-900">
+              <!--SVG Icon Placeholder-->
+              <span class="ml-3 text-xl font-extralight">Drew</span>
+            </a>
+            <p class="text-sm text-gray-500 font-extralight sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2021 —
+              <a href="https://twitter.com/drewbyts" class="text-gray-600 font-extralight ml-1" rel="noopener noreferrer" target="_blank">@drewbyts</a>
+            </p>
+            <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+              <p class="text-gray-800 font-extralight uppercase">Contact via DM</p>
+              <a  href="https://twitter.com/drewbyts" class="ml-3 text-gray-500">
+                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                  <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                </svg>
+              </a>
+              <a href="https://www.instagram.com/drewbyts/" class="ml-3 text-gray-500">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                  <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                </svg>
+              </a>
+            </span>
+          </div>
+      </footer>
+<script src = "app.js"></script>
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"/>
+    <title>Document</title>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+    <nav role ="navigation" 
+    class="flex justify-between items-center h-16 bg-gray-100 text-gray-700"
+    >
+       <a href="index.html" class="pl-6">
+       </a>
+       <div class="px-4 cursor-pointer md:hidden" id="bars">
+        <svg class="w-8 h-8" 
+        fill="none" 
+        stroke="currentColor" 
+        viewBox="0 0 24 24" 
+        xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round" 
+        stroke-linejoin="round" 
+        stroke-width="2" 
+        d="M4 6h16M4 12h16M4 18h16"
+        ></path>
+    </svg>
+       </div> 
+        <div class="hidden md:block z-20" id="menu">
+            <a href="index.html" class="h-1/3 p-4">HOME</a>
+            <a href="about.html" class="h-1/3 p-4">ABOUT</a>
+            <a href="work.html" class="font-bold animate-pulse h-1/3 p-4">WORK</a>
+        </div> 
+    </nav>
+    <!--Case Studies Section-->
+    <section class="bg-gray-100 bg-center lg:h-screen center text-gray-800">
+        <div class="container h-screen px-5 py-24 mx-auto">
+            <!--<div class="flex flex-wrap sm:flex-row flex-col items-center text-center py-6 mb-12">
+                <h1 class="text-gray-900 font-extralight text-8xl text-center items-center justify-center mb-2 sm:mb-0">WORK</h1>
+              </div>-->
+          <div class="flex flex-wrap h-full -m-4 items-center justify-center">
+            <div class="p-4 md:w-1/3">
+              <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+                <a href="https://drewbyts.github.io/Market-Analysis/"><img class="lg:h-48 md:h-36 w-full object-cover object-center" src="./images/GamingYellow.jpg" alt="blog"></a>
+                <div class="font-extralight p-6">
+                  <h2 class="tracking-widest text-xs title-font font-medium text-yellow-300 mb-1">EXPLORATORY DATA ANALYSIS</h2>
+                  <h1 class="title-font text-lg font-medium text-gray-900 mb-3">2020: The State of the Stock Market</h1>
+                  <p class="leading-relaxed mb-3">Using R, I coded a R Markdown report that analyzed the market performance and identified market trends through Exchange-Traded Funds.</p>
+                  <div class="flex items-center flex-wrap ">
+                    <span class="text-gray-800 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+                      <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                        <circle cx="12" cy="12" r="3"></circle>
+                      </svg>200
+                    </span>
+                    <span class="text-gray-800 inline-flex items-center leading-none text-sm">
+                      <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                        <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                      </svg>0
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="p-4 md:w-1/3">
+              <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+                <a href="https://drewbyts.github.io/Shelter-Analysis/"><img class="lg:h-48 md:h-36 w-full object-cover object-center" src="./images/PetsYellow.jpg" alt="blog"></a>
+                <div class="font-extralight p-6">
+                  <h2 class="tracking-widest text-xs title-font font-medium text-yellow-300 mb-1">EXPLORATORY DATA ANALYSIS</h2>
+                  <h1 class="title-font text-lg font-medium text-gray-900 mb-3">2020: Sacramento Shelter Analysis</h1>
+                  <p class="leading-relaxed mb-3">Using R, I wrangled City of Sacramento data to create a R Markdown report that identified how animal shelters were impacted in 2020.</p>
+                  <div class="flex items-center flex-wrap">
+                    <span class="text-gray-800 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+                      <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                        <circle cx="12" cy="12" r="3"></circle>
+                      </svg>162
+                    </span>
+                    <span class="text-gray-800 inline-flex items-center leading-none text-sm">
+                      <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                        <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                      </svg>0
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="p-4 md:w-1/3">
+              <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+                <a href="https://aramirez.netlify.app/"><img class="lg:h-48 md:h-36 w-full object-cover object-center" src="./images/Dec-4-Big Sur.jpg" alt="blog"></a>
+                <div class=" font-extralight p-6">
+                  <h2 class="tracking-widest text-xs title-font font-medium text-yellow-300 mb-1">WEB DEVELOPMENT</h2>
+                  <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Portfolio</h1>
+                  <p class="leading-relaxed mb-3">Using Gatsby, React, and Netlify, I managed to develop a personal website to assist in highlighting my projects and personality.</p>
+                  <div class="flex items-center flex-wrap ">
+                    <span class="text-gray-800 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+                      <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                        <circle cx="12" cy="12" r="3"></circle>
+                      </svg>201
+                    </span>
+                    <span class="text-gray-800 inline-flex items-center leading-none text-sm">
+                      <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                        <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                      </svg>0
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+      <!--<footer class="text-gray-600 body-font border-t border-gray-200">
+        <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+          <a class="flex title-font font-body items-center md:justify-start justify-center text-gray-900">
+            <span class="ml-3 text-xl font-extralight">Drew</span>
+          </a>
+          <p class="text-sm text-gray-500 font-extralight sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2021 —
+            <a href="https://twitter.com/drewbyts" class="text-gray-600 font-extralight ml-1" rel="noopener noreferrer" target="_blank">@drewbyts</a>
+          </p>
+          <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+            <p class="text-gray-800 font-extralight uppercase">Contact via DM</p>
+            <a  href="https://twitter.com/drewbyts" class="ml-3 text-gray-500">
+              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+              </svg>
+            </a>
+            <a href="https://www.instagram.com/drewbyts/" class="ml-3 text-gray-500">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+              </svg>
+            </a>
+          </span>
+        </div>
+      </footer>-->
+  <script src="app.js"></script>
+  </body>
+  </html>
