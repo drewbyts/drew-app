@@ -11,7 +11,7 @@ bars.addEventListener('click', () => {
             'h-screen',
             'text-6xl',
             'uppercase',
-            'font-body',
+            'font-extralight',
             'text-center',
             'bg-gray-100',
             'w-full',
