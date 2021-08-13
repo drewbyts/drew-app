@@ -4,7 +4,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        body:['Nunito']
+        heading:['"Helvetica Nue"'],
+        body:['"Courier New"']
       },
       keyframes: {
         wiggle: {
