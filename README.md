@@ -1,6 +1,6 @@
 # Hello 👋 
 
-# My Page
+# Drew
 
 
 I built my personal page, [Drew](https://drewbyts.netlify.app), using [TailwindCSS](https://tailwindcss.com/), HTML, and Adobe Illustrator.
