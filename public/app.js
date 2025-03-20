@@ -2,15 +2,22 @@
 // Define your project data
 const projects = [
     {
-        title: "R: Markdown and Tidyverse",
-        link: "https://drewbyts.github.io/Market-Analysis/",
-        image: "https://images.unsplash.com/photo-1444653614773-995cb1ef9efa?auto=format&fit=crop&w=1776&q=80",
+        title: "Football Dashboard - Tableau ",
+        link: "https://public.tableau.com/app/profile/andrew.ramirez8465/viz/FantasyFootballInsights2019-2021_16566917760970/FantasyOppEfficiency",
+        image: "https://images.unsplash.com/photo-1566577739112-5180d4bf9390?q=80&w=3126&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
-        title: "SQL",
-        link: "https://dune.xyz/drewbyts/",
-        image: "./images/dune_analytics.png",
+        title: "Digital Scratchers - Sequential Testing*",
+        link: "https://digital-lotto.netlify.app/",
+        image: "https://plus.unsplash.com/premium_photo-1718191345906-39c178e43133?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
+
+    {
+        title: "Dynasty Dashboard - Streamlit*",
+        link: "https://dynasty-dash.streamlit.app/",
+        image: "https://plus.unsplash.com/premium_photo-1675706227475-5ad2e60fc31d?q=80&w=2160&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    },
+
 ];
 
 // Select the container where the project cards will be added
