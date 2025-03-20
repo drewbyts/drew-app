@@ -1,179 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property='og:title' content='Drew'/>
-    <meta property='og:image' content='./images/Button1.png'/>
-    <meta property='og:description' content="Data Analyst located in Sacramento, CA who specializes in exploratory data analysis, data visualization, and analytics."/>
-    <link rel="stylesheet" href="styles.css"/>
-    <link rel="icon" type="image/png" href="./images/Button1.png"/>
-    <title>Drew | Data Analyst </title>
-    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+  <meta charset="UTF-8" >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Drew" />
+  <meta property="og:image" content="./images/Button1.png" >
+  <meta
+    property="og:description"
+    content="Data Analyst located in Sacramento, CA who specializes in exploratory data analysis, data visualization, and analytics."
+  />
+
+  <!-- Favicon & Styles -->
+  <link rel="icon" type="image/png" href="./images/Button1.png" />
+  <link rel="stylesheet" href="styles.css" />
+
+  <title>Drew | Data Analyst</title>
+  
 </head>
+<body class="bg-gray-100 text-gray-800 flex flex-col min-h-screen">
+
+  
+  <!-- Header -->
+  <header class="bg-yellow-400 shadow-sm">
     
-<body>
-  <header>
-    <div role ="navigation" class="flex justify-between items-center h-16 bg-gray-100 text-gray-800">
-       <a href="index.html">
-       </a>
-      <div class="px-4 cursor-pointer md:hidden" id="bars">
-        <svg class="w-8 h-8" 
-        fill="none" 
-        stroke="currentColor" 
-        viewBox="0 0 24 24" 
-        xmlns="http://www.w3.org/2000/svg">
-        <path stroke-linecap="round" 
-        stroke-linejoin="round" 
-        stroke-width="2" 
-        d="M4 6h16M4 12h16M4 18h16"
-        ></path>
-        </svg>
-      </div> 
-      <div class="hidden md:block z-20" id="menu">
-        <a href="index.html" class="font-body animate-pulse h-1/3 p-4">HOME</a>
-        <a href="about.html" class="font-body h-1/3 p-4">ABOUT</a>
-      </div> 
+    <!-- Navigation Bar -->
+    <div class="flex justify-between items-center h-12 px-4 md:px-8">
+      <a href="index.html">
+      <img
+      src="./images/Button1.png"
+      alt="Drew's Logo"
+      class="h-8 w-auto"
+      />
+      </a>
+
+      <!-- Desktop Menu -->
+      <nav
+        id="menu"
+        class="hidden md:block"
+        aria-label="Main Navigation"
+      >
+      </nav>
     </div>
   </header>
-  <!--Hero Section -->
-  <section class="w-full h-screen flex flex-col 2xl:py-64 justify-center items-center bg-gray-100 bg-center bg-cover">
-      <h1 class="text-8xl font-extrabold text-gray-800 hover:text-yellow-300 uppercase mb-6">Drew</h1>
-      <figure class="rounded-full bg-yellow-300 flex p-2 mb-6">
-          <a href="about.html"><img class="w-46 h-52 md:w-64 md:h-auto mx-auto" src="./images/Button1.png"></img>
-          </a>
-      </figure>
-      <h3 class="text-3xl text-center font-body text-gray-800 uppercase">Data Analyst</h3>
-      <h4 class = "text-lg text-center font-body text-gray-500 uppercase">Sacramento,CA</h4>
-        <div class="lg:py-16">
-          <!--<svg class="w-12 h-12" fill="black" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
-          </svg>-->
-          <a href= "#work-section" class="inline-flex text-gray-800 bg-yellow-300 border-0 py-2 px-6 mt-6 focus:outline-none rounded">WORK</a>
-        </div>
-  </section>
-  <!--Skill Set Section-->
-  <section class="text-gray-800 bg-gray-50">
-    <div class="container mx-auto px-5 py-12">
-      <div class="text-center mb-8">
-        <h1 class="text-6xl uppercase font-extrabold text-gray-900 hover:text-yellow-300">Skill Set</h1>
-        <!--<p class="lg:w-2/3 mx-auto leading-relaxed font-body font-extralight">lorem psum</p>-->
+
+  <!-- Main Content -->
+  <main class="flex-grow flex items-center justify-center">
+  <section class="py-12 px-4 md:px-12">
+    <div class="flex flex-col lg:flex-row items-center w-full max-w-7xl mx-auto">
+      <!-- Hero Text -->
+      <div class="text-center lg:text-left lg:w-1/2 p-8">
+        <h1
+          class="text-4xl lg:text-7xl font-extrabold text-gray-800 hover:text-green-800 uppercase mb-4 transition-colors duration-200"
+        >
+          Drew
+        </h1>
+        <h4 class="text-md font-body text-gray-500 uppercase max-w-md">
+          Data Analyst leading in/extrinsic business initiatives to secure incremental funding for public education.
+        </h4>
       </div>
-      <div class="flex flex-wrap -m-2">
-        <div class="p-2 lg:w-0.45 md:w-1/2 w-full">
-          <div class="h-full flex items-center hover:bg-yellow-300 border-gray-200 border p-4 rounded-lg">
-            <img alt="team" class="w-16 h-16 object-cover object-center flex-shrink-0 mr-4" src="./images/ML2.png">
-            <div class="flex-grow">
-              <h2 class="text-gray-900 font-body text-2xl">Data Analysis</h2>
-              <p class="text-gray-600 uppercase text-xs">Analytics</p>
-            </div>
-          </div>
-        </div>
-        <div class="p-2 lg:w-0.45 md:w-1/2 w-full">
-          <div class="h-full flex items-center hover:bg-yellow-300 border-gray-200 border p-4 rounded-lg">
-            <img alt="team" class="w-16 h-16 object-cover object-center flex-shrink-0 mr-4" src="./images/Reporting.png">
-            <div class="flex-grow">
-              <h2 class="text-gray-900 font-body text-2xl">Reporting</h2>
-              <p class="text-gray-600 uppercase text-xs">Analytics</p>
-            </div>
-          </div>
-        </div>
-        <div class="p-2 lg:w-0.45 md:w-1/2 w-full">
-          <div class="h-full flex items-center hover:bg-yellow-300 border-gray-200 border p-4 rounded-lg">
-            <img alt="team" class="w-16 h-16 object-cover object-center flex-shrink-0 mr-4" src="./images/DataViz.png">
-            <div class="flex-grow">
-              <h2 class="text-gray-900 font-body text-2xl">Data Visualization</h2>
-              <p class="text-gray-600 uppercase text-xs">Analytics</p>
-            </div>
-          </div>
-        </div>
-        <div class="p-2 lg:w-0.45 md:w-1/2 w-full">
-          <div class="h-full flex items-center hover:bg-yellow-300 border-gray-200 border p-4 rounded-lg">
-            <img alt="team" class="w-16 h-16 object-cover object-center flex-shrink-0 mr-4" src="./images/MktResearch.png"> 
-            <div class="flex-grow">
-              <h2 class="text-gray-900 font-body text-2xl">Data Science</h2>
-              <p class="text-gray-600 uppercase text-xs">Analytics</p>
-            </div>
-          </div>
-        </div>
+
+      <!-- Project Cards Container -->
+      <div
+        id="project-container"
+        class="flex flex-wrap justify-center bg-green-700 p-4 rounded-lg text-gray-800"
+      >
+        <!-- Cards are loaded dynamically from app.js -->
       </div>
     </div>
   </section>
-<!--Work Section-->
-  <section class="bg-gray-100 bg-center text-gray-800">
-    <div id="work-section"></div>
-    <div class="container mx-auto px-5 py-12">
-      <div class="flex flex-col text-center mb-8">
-        <h1 class="text-6xl uppercase mb-4 font-extrabold text-gray-900 hover:text-yellow-300">Work</h1>
-      </div>
-      <div class="flex flex-wrap h-full -m-4 items-center justify-center">
-        <div class="p-4 md:w-1/3">
-          <div class="h-1/2 border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-            <a href="https://drewbyts.github.io/Market-Analysis/"><img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://images.unsplash.com/photo-1444653614773-995cb1ef9efa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1776&q=80" alt="blog"></a>
-            <div class="font-body font-extralight p-6">
-              <h2 class="tracking-widest text-xs title-font font-medium text-yellow-300 mb-1">R: Markdown and Tidyverse</h2>
-              <h1 class="title-font text-lg font-body text-gray-900 mb-3">2020: State of the Stock Market</h1>
-              <p class="leading-relaxed mb-3">Using R, I coded a R Markdown report that analyzed market performance and identified market trends through Standard and Poor's ETFs.</p>
-              <div class="flex items-center flex-wrap ">
-                <span class="text-gray-800 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
-                </span>
-                <span class="text-gray-800 inline-flex items-center leading-none text-sm">
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="p-4 md:w-1/3">
-          <div class="h-1/2 border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-            <a href="https://public.tableau.com/app/profile/andrew.ramirez8465/viz/FantasyFootballInsights2019-2021_16566917760970/FantasyOppEfficiency"><img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://images.unsplash.com/photo-1512144253214-d94e86cd9189?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2231&q=80" alt="blog"></a>
-            <div class="font-body font-extralight p-6">
-              <h2 class="tracking-widest text-xs title-font font-body text-yellow-300 mb-1">Tableau and R</h2>
-              <h1 class="title-font text-lg font-body text-gray-900 mb-3">Fantasy Football Insights</h1>
-              <p class="leading-relaxed mb-3">Using R, I cleaned and transformed fantasy football data. Then, using Tableau, I created a dashboard with metrics of importance for NFL wide receivers.</p>
-              <div class="flex items-center flex-wrap">
-                <span class="text-gray-800 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
-                </span>
-                <span class="text-gray-800 inline-flex items-center leading-none text-sm">
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="p-4 md:w-1/3">
-          <div class="h-1/2 border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-            <a href="https://dune.xyz/drewbyts/"><img class="lg:h-48 md:h-36 w-full object-cover object-center" src="./images/dune_analytics.png" alt="blog"></a>
-            <div class="font-body font-extralight p-6">
-              <h2 class="tracking-widest text-xs title-font font-body text-yellow-300 mb-1">SQL</h2>
-              <h1 class="title-font text-lg font-body text-gray-900 mb-3">Web3 Dashboards</h1>
-              <p class="leading-relaxed mb-3">Through @DuneAnalytics, I used SQL to develop two web3 dashboards. The dashboards provide an overview of Decentralized Exchanges, OpenSea, and a collection of NFTs.</p>
-              <div class="flex items-center flex-wrap ">
-                <span class="text-gray-800 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
-                </span>
-                <span class="text-gray-800 inline-flex items-center leading-none text-sm">
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+  </main>
+  </body>
+
+  <!-- Footer -->
+  <footer class="border-t border-gray-200 bg-gray-100">
+    <div
+      class="container px-5 py-6 mx-auto flex flex-col sm:flex-row items-center"
+    >
+      <!-- Footer Branding -->
+      <a
+        href="index.html"
+        class="flex title-font font-body text-gray-900 mb-4 sm:mb-0"
+      >
+        <span class="ml-3 text-xl">Drew</span>
+      </a>
+
+      <!-- Copyright -->
+      <p
+        class="text-sm text-gray-500 font-body sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4"
+      >
+        ©
+        <span id="year">2021</span>
+        —
+        <a
+          href="https://www.instagram.com/drewbyts/"
+          class="text-gray-600 font-body ml-1"
+          rel="noopener noreferrer"
+          target="_blank"
+          >@drewbyts</a
+        >
+      </p>
+
+      <!-- Social Icons -->
+      <span
+        class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start"
+      >
+        <a
+          href="https://github.com/drewbyts"
+          class="ml-3 hover:text-gray-700"
+          aria-label="GitHub"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12 0c-6.626 0-12 5.373-12 12 
+              0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234 
+              c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756
+              -1.089-.745.083-.729.083-.729 1.205.084 1.839 
+              1.237 1.839 1.237 1.07 1.834 
+              2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604 
+              -2.665-.305-5.467-1.334-5.467-5.931 
+              0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524
+              .117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 
+              1.983-.399 3.003-.404 1.02.005 2.047.138 
+              3.006.404 2.291-1.552 3.297-1.23 
+              3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 
+              1.235 1.911 1.235 3.221 0 4.609-2.807 
+              5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293 
+              c0 .319.192.694.801.576 4.765-1.589 
+              8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+            />
+          </svg>
+        </a>
+      </span>
     </div>
-</section>   
-  <!--Footer-->
-  <footer class="text-gray-600 border-t border-gray-200 bg-gray-100">
-          <div class="container px-5 py-6 mx-auto flex items-center sm:flex-row flex-col">
-            <a class="flex title-font font-body items-center md:justify-start justify-center text-gray-900">
-              <span class="ml-3 text-xl">Drew</span>
-            </a>
-            <p class="text-sm text-gray-500 font-body sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2021 —
-              <a href="https://twitter.com/drewbyts" class="text-gray-600 font-body ml-1" rel="noopener noreferrer" target="_blank">@drewbyts</a>
-            </p>
-            <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
-              <a href="https://www.instagram.com/drewbyts/" class="ml-3 text-pink-400">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-              </a>
-            </span>
-          </div>
   </footer>
-</body>
-<script src ="app.js"></script>
+
+  <!-- JavaScript (defer ensures DOM is loaded first) -->
+  <script src="app.js" defer></script>
+  <script>
+    // Dynamically set the year in the footer
+    document.addEventListener("DOMContentLoaded", () => {
+      document.getElementById("year").textContent = new Date().getFullYear();
+    });
+  </script>
+
 </html>
