@@ -74,23 +74,20 @@ if (projectContainer) {
 // Define writing data for the dedicated Writings page
 const writings = [
     {
-        title: "Funding Education Through Data Storytelling",
-        date: "2024",
-        description:
-            "Translating enrollment trends and budget constraints into narratives that helped secure incremental funding for Sacramento classrooms.",
-        link: "https://docs.google.com/document/d/1HCu6MbtmO7lOZobppUb0rE2ipiJoPjzuO2Iey8u-q68/edit?usp=sharing",
+        title: "TBD",
+        date: "TBD",
+        description: "TBD",
+        link: "",
     },
     {
-        title: "Building Trust with Transparent Dashboards",
-        date: "2023",
-        description:
-            "Design principles I rely on to keep school district leaders and community members aligned on the same set of numbers.",
+        title: "TBD",
+        date: "TBD",
+        description:"TBD",
     },
     {
-        title: "Notes on Collaborative Forecasting",
-        date: "2022",
-        description:
-            "Reflections on partnering with operations teams to reconcile bottom-up plans with statewide projections.",
+        title: "TBD",
+        date: "TBD",
+        description: "TBD",
     },
 ];
 
