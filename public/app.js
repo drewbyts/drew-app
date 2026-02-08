@@ -2,7 +2,6 @@
 // Configure navigation for shared header usage across pages
 const navItems = [
     { label: "Home", href: "index.html" },
-    { label: "Writings", href: "writings.html" },
 ];
 
 const menu = document.querySelector("#menu");
@@ -69,60 +68,6 @@ if (projectContainer) {
             </div>
         `;
     });
-}
-
-// Define writing data for the dedicated Writings page
-const writings = [
-    {
-        title: "TBD",
-        date: "TBD",
-        description: "TBD",
-        link: "",
-    },
-    {
-        title: "TBD",
-        date: "TBD",
-        description:"TBD",
-    },
-    {
-        title: "TBD",
-        date: "TBD",
-        description: "TBD",
-    },
-];
-
-const writingContainer = document.querySelector("#writing-container");
-
-if (writingContainer) {
-    writingContainer.innerHTML = writings
-        .map((piece) => {
-            const cta = piece.link
-                ? `<span class="mt-6 inline-flex items-center text-sm font-semibold text-green-800">Read more
-                        <svg class="ml-2 h-4 w-4" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
-                            <path d="M5 12h14M12 5l7 7-7 7" />
-                        </svg>
-                    </span>`
-                : `<span class="mt-6 text-sm font-semibold text-gray-700">Draft in progress</span>`;
-
-            const wrapperStart = piece.link
-                ? `<a href="${piece.link}" target="_blank" rel="noopener noreferrer" class="block h-full">`
-                : '<div class="block h-full">';
-            const wrapperEnd = piece.link ? "</a>" : "</div>";
-
-            return `
-                <article class="w-full md:w-[calc(50%-1.5rem)] xl:w-[calc(33.333%-1.5rem)]">
-                    ${wrapperStart}
-                        <div class="h-full bg-white rounded-lg shadow hover:shadow-lg transition-shadow duration-200 p-6 flex flex-col">
-                            <p class="text-xs uppercase tracking-wide text-green-800 mb-2">${piece.date}</p>
-                            <h3 class="text-xl font-semibold mb-3 text-gray-900">${piece.title}</h3>
-                            <p class="text-gray-600 font-body flex-grow">${piece.description}</p>
-                            ${cta}
-                        </div>
-                    ${wrapperEnd}
-                </article>
-            `;
-        })
-        .join("");
 }
 
 // Shared footer year update
